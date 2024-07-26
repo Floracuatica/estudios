@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <style>
             body {
                 font-family: Arial, Helvetica, sans-serif; /* Fuentes clásicas */
                 font-size: 12px; /* Tamaño de letra */
             }
-            input[type="text"], input[type="email"],select {
+            input[type="text"], input[type="email"], select {
                 background: white;  /* Fondo blanco */
                 height: 30px;   /* Altura */
                 border-radius: 6px; /* Borde redondeado */
@@ -21,19 +20,18 @@
             label {
                 font-weight: bold; /* Negrita */
             }
-            
         </style>        
     </head>
     <body>
         <form>
             <label for="nombre">Nombre:</label>
-            <input type="text" placeholder="Ingrese su nombre" />
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" />
 
             <label for="apellido">Apellidos:</label> 
             <input type="text" id="apellido" placeholder="Ingrese sus apellidos" />
 
             <label for="email">E-mail:</label> 
-            <input type="text" id="email" placeholder="Ingrese su e-mail" />
+            <input type="email" id="email" placeholder="Ingrese su e-mail" />
 
             <label for="servicios_helados">Seleccione servicio:</label> 
             <select id="servicios_helados">
@@ -49,4 +47,4 @@
             <label>Pago con tarjeta <input type="radio" value="TAR" name="tipo_pago"></label>
         </form>
     </body>
-</head>
+</html>
