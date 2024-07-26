@@ -5,17 +5,29 @@
             body {
                 font-family: Arial, Helvetica, sans-serif; /* Fuentes clásicas */
                 font-size: 12px; /* Tamaño de letra */
-            }
-            input[type="text"], input[type="email"], select {
-                background: white;  /* Fondo blanco */
-                height: 30px;   /* Altura */
-                border-radius: 6px; /* Borde redondeado */
-                border: 1px solid #777; /* Borde gris */
-                margin-bottom: 15px; /* Margen inferior */
+                padding: 20px; /* Espacio alrededor del contenido */
             }
             form {
                 display: flex;
                 flex-direction: column;
+                gap: 15px; /* Espacio entre los elementos del formulario */
+                max-width: 400px; /* Ancho máximo del formulario */
+                margin: 0 auto; /* Centrar el formulario */
+                padding: 20px; /* Espacio dentro del formulario */
+                border: 1px solid #ccc; /* Borde del formulario */
+                border-radius: 10px; /* Bordes redondeados del formulario */
+                background-color: #f9f9f9; /* Fondo del formulario */
+            }
+            input[type="text"], input[type="email"], select, textarea {
+                background: white;  /* Fondo blanco */
+                height: 30px;   /* Altura */
+                border-radius: 6px; /* Borde redondeado */
+                border: 1px solid #777; /* Borde gris */
+                padding: 5px; /* Espacio interior del campo */
+            }
+            textarea {
+                height: 60px; /* Altura del textarea */
+                resize: vertical; /* Permitir cambiar tamaño vertical del textarea */
             }
             label {
                 font-weight: bold; /* Negrita */
@@ -41,7 +53,7 @@
             </select>
 
             <label for="mensaje">Extras para tu servicio:</label>
-            <textarea id="mensaje"></textarea>
+            <textarea id="mensaje" placeholder="Ingrese detalles adicionales"></textarea>
 
             <label>Pago al contado <input type="radio" value="CONT" name="tipo_pago"></label>
             <label>Pago con tarjeta <input type="radio" value="TAR" name="tipo_pago"></label>
